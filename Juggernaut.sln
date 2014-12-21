@@ -1,0 +1,127 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Authentication", "1_Authentication", "{C9D72A1D-6CFC-4AEB-9616-2C4BCA5B0A9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00_Common", "00_Common", "{6AB5E361-5067-4C70-B9F4-350B9D14CFF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juggernaut.Authentication.Common", "1_Authentication\00_Common\Juggernaut.Authentication.Common\Juggernaut.Authentication.Common.csproj", "{D931ADF5-F783-46D3-BFAF-62E6A968AB22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "1_Authentication\00_Common\ClassLibrary1\ClassLibrary1.csproj", "{5AE2FE17-5204-4322-8CEE-83A081DC76B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "08_Tests", "08_Tests", "{92F7FF9E-BB62-494D-BF70-2ACB1DEB0E7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "1_Authentication\08_Tests\UnitTests\UnitTests.csproj", "{6D9995B7-D673-4625-A160-2ACA9CB37A91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06_EntityLayer", "06_EntityLayer", "{0FD6BB7B-B031-4288-B4FB-1894FD1F6751}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityModels", "EntityModels", "{B222F8B8-510A-47BE-90CE-470F4917BE18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juggernaut.Authentication.EntityModel", "1_Authentication\06_EntityLayer\EntityModels\Juggernaut.Authentication.EntityModel\Juggernaut.Authentication.EntityModel.csproj", "{40838435-02D1-4235-AB60-EE1813A4EEDE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_QueryManager", "05_QueryManager", "{0A9F5A24-D1FF-4958-87B7-C01D37A88C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juggernaut.Authentication.QueryManager", "1_Authentication\05_QueryManager\Juggernaut.Authentication.QueryManager\Juggernaut.Authentication.QueryManager.csproj", "{65FD0E32-03D6-421C-A7B4-30BBD2D1F0E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juggernaut.Authentication.Repositories", "1_Authentication\05_QueryManager\Juggernaut.Authentication.Repositories\Juggernaut.Authentication.Repositories.csproj", "{2BD6ED26-875D-4C42-9583-FDD4D6C97ECB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01_Clients", "01_Clients", "{A6867B73-1D7D-459B-AABA-DCF4ABB9A3F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGUI", "1_Authentication\01_Clients\TestGUI\TestGUI.csproj", "{7105C042-A37A-4AAC-BA08-16020271408A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03_LogicLayer", "03_LogicLayer", "{643A6BC5-23F3-4398-9AFA-B9FD0A366A64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juggernaut.Authentication.LogicLayerInterfaces", "1_Authentication\03_LogicLayer\Juggernaut.Authentication.LogicLayerInterfaces\Juggernaut.Authentication.LogicLayerInterfaces.csproj", "{968ADF8E-282D-48F1-BA99-8591BC9152B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02_Services", "02_Services", "{2DA11DC7-E9B3-4EE8-A74E-42E9C7EFE882}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contract", "Contract", "{E13C35B9-2BEF-42A3-B610-4B3B7AEDE785}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HostSite", "HostSite", "{A0ED74F0-5003-47D0-B914-BE8C286B49B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juggernaut.Authentication.DataContract", "1_Authentication\02_Services\Contract\Juggernaut.Authentication.DataContract\Juggernaut.Authentication.DataContract.csproj", "{C45E2E0B-8955-42CD-A8AD-294DA7DEC022}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juggernaut.Authentication.ServiceContract", "1_Authentication\02_Services\Contract\Juggernaut.Authentication.ServiceContract\Juggernaut.Authentication.ServiceContract.csproj", "{8BB5CB6D-9C5B-4A12-9DE3-E6588B18CE67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Juggernaut.Authentication.LogicLayer", "1_Authentication\03_LogicLayer\Juggernaut.Authentication.LogicLayerInterfaces\Juggernaut.Authentication.LogicLayer\Juggernaut.Authentication.LogicLayer.csproj", "{E71FD978-BC80-4EF3-97FB-34BA0B2E6CD2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D931ADF5-F783-46D3-BFAF-62E6A968AB22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D931ADF5-F783-46D3-BFAF-62E6A968AB22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D931ADF5-F783-46D3-BFAF-62E6A968AB22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D931ADF5-F783-46D3-BFAF-62E6A968AB22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE2FE17-5204-4322-8CEE-83A081DC76B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE2FE17-5204-4322-8CEE-83A081DC76B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE2FE17-5204-4322-8CEE-83A081DC76B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE2FE17-5204-4322-8CEE-83A081DC76B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D9995B7-D673-4625-A160-2ACA9CB37A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D9995B7-D673-4625-A160-2ACA9CB37A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D9995B7-D673-4625-A160-2ACA9CB37A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D9995B7-D673-4625-A160-2ACA9CB37A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40838435-02D1-4235-AB60-EE1813A4EEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40838435-02D1-4235-AB60-EE1813A4EEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40838435-02D1-4235-AB60-EE1813A4EEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40838435-02D1-4235-AB60-EE1813A4EEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65FD0E32-03D6-421C-A7B4-30BBD2D1F0E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65FD0E32-03D6-421C-A7B4-30BBD2D1F0E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65FD0E32-03D6-421C-A7B4-30BBD2D1F0E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65FD0E32-03D6-421C-A7B4-30BBD2D1F0E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BD6ED26-875D-4C42-9583-FDD4D6C97ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BD6ED26-875D-4C42-9583-FDD4D6C97ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BD6ED26-875D-4C42-9583-FDD4D6C97ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BD6ED26-875D-4C42-9583-FDD4D6C97ECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7105C042-A37A-4AAC-BA08-16020271408A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7105C042-A37A-4AAC-BA08-16020271408A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7105C042-A37A-4AAC-BA08-16020271408A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7105C042-A37A-4AAC-BA08-16020271408A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{968ADF8E-282D-48F1-BA99-8591BC9152B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{968ADF8E-282D-48F1-BA99-8591BC9152B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{968ADF8E-282D-48F1-BA99-8591BC9152B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{968ADF8E-282D-48F1-BA99-8591BC9152B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C45E2E0B-8955-42CD-A8AD-294DA7DEC022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C45E2E0B-8955-42CD-A8AD-294DA7DEC022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C45E2E0B-8955-42CD-A8AD-294DA7DEC022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C45E2E0B-8955-42CD-A8AD-294DA7DEC022}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BB5CB6D-9C5B-4A12-9DE3-E6588B18CE67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BB5CB6D-9C5B-4A12-9DE3-E6588B18CE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BB5CB6D-9C5B-4A12-9DE3-E6588B18CE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BB5CB6D-9C5B-4A12-9DE3-E6588B18CE67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E71FD978-BC80-4EF3-97FB-34BA0B2E6CD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71FD978-BC80-4EF3-97FB-34BA0B2E6CD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71FD978-BC80-4EF3-97FB-34BA0B2E6CD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71FD978-BC80-4EF3-97FB-34BA0B2E6CD2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6AB5E361-5067-4C70-B9F4-350B9D14CFF4} = {C9D72A1D-6CFC-4AEB-9616-2C4BCA5B0A9F}
+		{D931ADF5-F783-46D3-BFAF-62E6A968AB22} = {6AB5E361-5067-4C70-B9F4-350B9D14CFF4}
+		{5AE2FE17-5204-4322-8CEE-83A081DC76B8} = {6AB5E361-5067-4C70-B9F4-350B9D14CFF4}
+		{92F7FF9E-BB62-494D-BF70-2ACB1DEB0E7D} = {C9D72A1D-6CFC-4AEB-9616-2C4BCA5B0A9F}
+		{6D9995B7-D673-4625-A160-2ACA9CB37A91} = {92F7FF9E-BB62-494D-BF70-2ACB1DEB0E7D}
+		{0FD6BB7B-B031-4288-B4FB-1894FD1F6751} = {C9D72A1D-6CFC-4AEB-9616-2C4BCA5B0A9F}
+		{B222F8B8-510A-47BE-90CE-470F4917BE18} = {0FD6BB7B-B031-4288-B4FB-1894FD1F6751}
+		{40838435-02D1-4235-AB60-EE1813A4EEDE} = {B222F8B8-510A-47BE-90CE-470F4917BE18}
+		{0A9F5A24-D1FF-4958-87B7-C01D37A88C0D} = {C9D72A1D-6CFC-4AEB-9616-2C4BCA5B0A9F}
+		{65FD0E32-03D6-421C-A7B4-30BBD2D1F0E5} = {0A9F5A24-D1FF-4958-87B7-C01D37A88C0D}
+		{2BD6ED26-875D-4C42-9583-FDD4D6C97ECB} = {0A9F5A24-D1FF-4958-87B7-C01D37A88C0D}
+		{A6867B73-1D7D-459B-AABA-DCF4ABB9A3F0} = {C9D72A1D-6CFC-4AEB-9616-2C4BCA5B0A9F}
+		{7105C042-A37A-4AAC-BA08-16020271408A} = {A6867B73-1D7D-459B-AABA-DCF4ABB9A3F0}
+		{643A6BC5-23F3-4398-9AFA-B9FD0A366A64} = {C9D72A1D-6CFC-4AEB-9616-2C4BCA5B0A9F}
+		{968ADF8E-282D-48F1-BA99-8591BC9152B0} = {643A6BC5-23F3-4398-9AFA-B9FD0A366A64}
+		{2DA11DC7-E9B3-4EE8-A74E-42E9C7EFE882} = {C9D72A1D-6CFC-4AEB-9616-2C4BCA5B0A9F}
+		{E13C35B9-2BEF-42A3-B610-4B3B7AEDE785} = {2DA11DC7-E9B3-4EE8-A74E-42E9C7EFE882}
+		{A0ED74F0-5003-47D0-B914-BE8C286B49B6} = {2DA11DC7-E9B3-4EE8-A74E-42E9C7EFE882}
+		{C45E2E0B-8955-42CD-A8AD-294DA7DEC022} = {E13C35B9-2BEF-42A3-B610-4B3B7AEDE785}
+		{8BB5CB6D-9C5B-4A12-9DE3-E6588B18CE67} = {E13C35B9-2BEF-42A3-B610-4B3B7AEDE785}
+		{E71FD978-BC80-4EF3-97FB-34BA0B2E6CD2} = {643A6BC5-23F3-4398-9AFA-B9FD0A366A64}
+	EndGlobalSection
+EndGlobal

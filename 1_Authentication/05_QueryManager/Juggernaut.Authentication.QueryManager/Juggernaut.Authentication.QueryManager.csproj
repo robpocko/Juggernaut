@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65FD0E32-03D6-421C-A7B4-30BBD2D1F0E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Juggernaut.Authentication.QueryManager</RootNamespace>
+    <AssemblyName>Juggernaut.Authentication.QueryManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Context\IDbContextFactory.cs" />
+    <Compile Include="Context\JuggernautContext.cs" />
+    <Compile Include="Context\JuggernautContextFactory.cs" />
+    <Compile Include="Context\JuggernautInitializer.cs" />
+    <Compile Include="JuggernautUnitOfWork.cs" />
+    <Compile Include="JuggernautUserQM.cs" />
+    <Compile Include="Mapping\JuggernautApplicationMap.cs" />
+    <Compile Include="Mapping\JuggernautUserMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories.cs" />
+    <Compile Include="RepositoryBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\00_Common\Juggernaut.Authentication.Common\Juggernaut.Authentication.Common.csproj">
+      <Project>{d931adf5-f783-46d3-bfaf-62e6a968ab22}</Project>
+      <Name>Juggernaut.Authentication.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\06_EntityLayer\EntityModels\Juggernaut.Authentication.EntityModel\Juggernaut.Authentication.EntityModel.csproj">
+      <Project>{40838435-02d1-4235-ab60-ee1813a4eede}</Project>
+      <Name>Juggernaut.Authentication.EntityModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Juggernaut.Authentication.Repositories\Juggernaut.Authentication.Repositories.csproj">
+      <Project>{2bd6ed26-875d-4c42-9583-fdd4d6c97ecb}</Project>
+      <Name>Juggernaut.Authentication.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
